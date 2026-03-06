@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Web View Tester</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1A73E8 0%, #0D47A1 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+        .hero-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 540px;
+            margin: 0 auto 32px;
+        }
+        .badge {
+            display: inline-block;
+        }
+        .badge img {
+            height: 50px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 20px;
+            background: #f5f5f7;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .feature-card .icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #6e6e73;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+        }
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        section p, section li {
+            font-size: 0.95rem;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        section ul {
+            padding-left: 20px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e5e7;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f5f5f7;
+            font-size: 0.85rem;
+            color: #86868b;
+        }
+        footer a {
+            color: #1A73E8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 60px 20px 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-icon">🌐</div>
+        <h1>Identity Web View Tester</h1>
+        <p>A developer tool for testing web authentication flows using WKWebView and ASWebAuthenticationSession on iOS.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🌍</div>
+                <h3>WKWebView Browser</h3>
+                <p>Open any URL in a full WKWebView with back, forward, and reload navigation. See the current URL and page title in real time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔐</div>
+                <h3>ASWebAuthenticationSession</h3>
+                <p>Test OAuth and authentication flows using Apple's secure ASWebAuthenticationSession. Capture callback URLs and authorization codes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔗</div>
+                <h3>Universal Link Handling</h3>
+                <p>Listen for and capture universal links. View the full URL and parsed query parameters when a link is received.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📋</div>
+                <h3>Result Capture</h3>
+                <p>All results are displayed on the main screen with parsed parameters. Text is selectable for easy copying.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Privacy Policy -->
+    <section id="privacy">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last updated:</strong> March 5, 2026</p>
+
+            <p>Identity Web View Tester ("the App") is designed with your privacy in mind. This policy explains how we handle your data.</p>
+
+            <h3 style="margin: 20px 0 10px; font-size: 1.1rem;">Data Collection</h3>
+            <p>The App does <strong>not</strong> collect, store, transmit, or share any personal data. Specifically:</p>
+            <ul>
+                <li>No personal information is collected</li>
+                <li>No analytics or tracking tools are used</li>
+                <li>No data is sent to any server</li>
+                <li>No cookies are stored by the App itself</li>
+                <li>No third-party SDKs are integrated</li>
+            </ul>
+
+            <h3 style="margin: 20px 0 10px; font-size: 1.1rem;">Web Content</h3>
+            <p>The App allows you to open URLs in WKWebView and ASWebAuthenticationSession. Websites you visit may have their own privacy policies and may collect data. The App has no control over third-party website behavior.</p>
+
+            <h3 style="margin: 20px 0 10px; font-size: 1.1rem;">Local Data</h3>
+            <p>All URLs you enter and results you receive remain on your device. Nothing is transmitted externally by the App.</p>
+
+            <h3 style="margin: 20px 0 10px; font-size: 1.1rem;">Changes</h3>
+            <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Support -->
+    <section id="support">
+        <div class="container">
+            <h2>Support</h2>
+            <p>If you have any questions, issues, or feedback about Identity Web View Tester, please reach out:</p>
+            <p><strong>Email:</strong> <a href="mailto:yujun.china@gmail.com" style="color: #1A73E8; text-decoration: none;">yujun.china@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/yujunpersonal/Web-View-Tester" style="color: #1A73E8; text-decoration: none;">github.com/yujunpersonal/Web-View-Tester</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jun Yu. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="#privacy">Privacy Policy</a> &middot;
+            <a href="#support">Support</a> &middot;
+            <a href="https://github.com/yujunpersonal/Web-View-Tester">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>

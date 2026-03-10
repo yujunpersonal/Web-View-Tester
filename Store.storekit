@@ -1,0 +1,93 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "CA4E87DA",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6760208909",
+      "localizations" : [
+        {
+          "description" : "Permanently unlimited usage",
+          "displayName" : "Unlock Unlimited Usage Permanently",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "cn.buddy.webviewtester.lifetimevip",
+      "referenceName" : "Pro Permanently",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6760158911",
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "NV2M6XHLDB",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 794773870.82117605,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21965166",
+      "localizations" : [
+
+      ],
+      "name" : "Great Web View Tester PRO",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6760207823",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Auto renew monthly for unlimited usage",
+              "displayName" : "Unlock Unlimited Usage Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "great_web_view_tester_advanced",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "21965166",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

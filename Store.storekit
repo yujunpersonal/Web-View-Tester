@@ -1,11 +1,11 @@
 {
   "appPolicies" : {
-    "eula" : "",
+    "eula" : "https://support.buddy.cn/terms-of-use",
     "policies" : [
       {
         "locale" : "en_US",
         "policyText" : "",
-        "policyURL" : ""
+        "policyURL" : "https://support.buddy.cn/privacy-policy"
       }
     ]
   },
@@ -17,16 +17,16 @@
     {
       "displayPrice" : "9.99",
       "familyShareable" : false,
-      "internalID" : "6760208909",
+      "internalID" : "6760556820",
       "localizations" : [
         {
-          "description" : "Permanently unlimited usage",
-          "displayName" : "Unlock Unlimited Usage Permanently",
+          "description" : "Onetime purchase, lifetime unlimited usage",
+          "displayName" : "Pro Lifetime",
           "locale" : "en_US"
         }
       ],
-      "productID" : "cn.buddy.webviewtester.lifetimevip",
-      "referenceName" : "Pro Permanently",
+      "productID" : "cn.buddy.web_view_tester.pro_lifetime",
+      "referenceName" : "Pro Lifetime",
       "type" : "NonConsumable"
     }
   ],
@@ -38,7 +38,7 @@
     "_developerTeamID" : "NV2M6XHLDB",
     "_disableDialogs" : false,
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 794773870.82117605,
+    "_lastSynchronizedDate" : 795156420.82496703,
     "_locale" : "en_US",
     "_renewalBillingIssuesEnabled" : false,
     "_storefront" : "USA",
@@ -53,7 +53,7 @@
       "localizations" : [
 
       ],
-      "name" : "Great Web View Tester PRO",
+      "name" : "Great Web View Tester Pro",
       "subscriptions" : [
         {
           "adHocOffers" : [
@@ -62,19 +62,19 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "1.99",
+          "displayPrice" : "2.99",
           "familyShareable" : false,
           "groupNumber" : 1,
-          "internalID" : "6760207823",
+          "internalID" : "6760557332",
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "Auto renew monthly for unlimited usage",
-              "displayName" : "Unlock Unlimited Usage Monthly",
+              "description" : "Unlock unlimited usage for 1 month, auto renews",
+              "displayName" : "Pro Monthly",
               "locale" : "en_US"
             }
           ],
-          "productID" : "great_web_view_tester_advanced",
+          "productID" : "cn.buddy.web_view_tester.pro_monthly",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Pro Monthly",
           "subscriptionGroupID" : "21965166",

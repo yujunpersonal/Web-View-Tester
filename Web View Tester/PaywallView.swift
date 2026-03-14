@@ -74,6 +74,25 @@ struct PaywallView: View {
                         }
                 )
 
+                // Subscription disclaimer and legal links
+                VStack(spacing: 6) {
+                    Text("Subscription automatically renews monthly at $2.99 unless cancelled at least 24 hours before the end of the current period. Manage your subscription in Settings > Apple ID > Subscriptions.")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+
+                    HStack(spacing: 4) {
+                        Link("Terms of Use (EULA)", destination: URL(string: "https://support.buddy.cn/terms-of-use")!)
+                            .font(.caption2)
+                        Text("and")
+                            .font(.caption2)
+                            .foregroundStyle(.tertiary)
+                        Link("Privacy Policy", destination: URL(string: "https://support.buddy.cn/privacy-policy")!)
+                            .font(.caption2)
+                    }
+                }
+
                 Spacer(minLength: 40)
             }
         }
@@ -228,22 +247,22 @@ struct PaywallView: View {
 
             VStack(alignment: .leading, spacing: 14) {
                 benefitRow(
-                    icon: "globe.badge.chevron.backward",
-                    color: .blue,
-                    title: "Unlimited WKWebView Testing",
-                    description: "Test any URL with WKWebView without limits"
+                    icon: "infinity",
+                    color: .orange,
+                    title: "Unlimited Usage",
+                    description: "No launch limits — use all features as much as you want"
                 )
                 benefitRow(
-                    icon: "person.badge.key.fill",
-                    color: .green,
-                    title: "Unlimited ASWebAuthenticationSession",
-                    description: "Test authentication flows for any URL"
+                    icon: "globe.americas.fill",
+                    color: .blue,
+                    title: "All Testing Modes",
+                    description: "WKWebView, ASWebAuthenticationSession, SFSafariViewController, and External Browser"
                 )
                 benefitRow(
                     icon: "arrow.triangle.branch",
-                    color: .orange,
-                    title: "Unlimited Redirection Capture",
-                    description: "Capture and inspect all redirections in WKWebView"
+                    color: .purple,
+                    title: "Full Redirect & History Capture",
+                    description: "Capture redirections, navigation history, and universal links"
                 )
             }
             .padding()
@@ -266,7 +285,7 @@ struct PaywallView: View {
                 purchaseOptionCard(
                     icon: "calendar",
                     iconColor: .blue,
-                    title: "Monthly",
+                    title: "Pro Montly",
                     subtitle: "Billed monthly, cancel anytime",
                     price: subscription.displayPrice,
                     pricePeriod: "/ month",
@@ -281,7 +300,7 @@ struct PaywallView: View {
                 purchaseOptionCard(
                     icon: "crown.fill",
                     iconColor: .orange,
-                    title: "Lifetime",
+                    title: "Pro Lifetime",
                     subtitle: "One-time purchase, yours forever",
                     price: lifetime.displayPrice,
                     pricePeriod: "one-time",

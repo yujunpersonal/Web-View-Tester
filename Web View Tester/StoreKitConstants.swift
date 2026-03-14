@@ -1,8 +1,8 @@
 import Foundation
 
 enum StoreKitConstants {
-    static let proMontly = "great_web_view_tester_advanced"
-    static let proPermanently = "cn.buddy.webviewtester.lifetimevip"
+    static let proMontly = "cn.buddy.web_view_tester.pro_monthly"
+    static let proPermanently = "cn.buddy.web_view_tester.pro_lifetime"
 
     static let subscriptionProductIDs: Set<String> = [
         proMontly
